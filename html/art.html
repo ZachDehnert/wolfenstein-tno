@@ -1,0 +1,118 @@
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>WTNO</title>
+
+<!-- external styles -->
+<link rel="stylesheet" href="../css/style.css">
+
+<!--
+
+    Internal Styles
+
+-->
+
+<style>
+
+
+body {
+    /* background-image:url("images/header-bg.jpg"); */
+    /* background-size: contain; */
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div id="art-container">
+
+            <div id="header-nav">
+
+                <div onClick="location.href='../index.html#art'" style="float:left;" id="carrot-nav-btn" class="carrot-nav-btn"></div>
+                <!--p id="backBtnText" style="color:white;font-family: Arial, Helvetica, sans-serif;padding-top:15px;font-weight:bold;">BACK</p>-->
+
+            </div>
+
+            <div id="photo-container">
+
+                <div id="left-btn"><img id="leftCarrot" src="../images/left-carrot.png"></div>
+                <div id="middle-btn">
+
+                    <div id="left-image">
+
+                        
+
+                    </div>
+
+                    <div id="right-text">
+
+                        <h1 id="mid-h1"></h1>
+
+                        <p style="clear:both;color:#fff;font-size: 42pt;padding:0 0 0 4%;">"</p>
+
+                        <p id="mid-p"></p>
+
+                        <p style="clear:both;color:#fff;font-size: 42pt;padding:4% 0 0 4%;float:right;">"</p>
+
+                    </div>
+
+                </div>
+                <div id="right-btn"><img id="rightCarrot" src="../images/right-carrot.png"></div>
+
+            </div>
+
+
+    </div>
+
+    
+
+<script>
+    console.log("******* ******* Internal JS is connected ******* *******");
+
+    document.getElementById("mid-h1").innerHTML = "Deathshead's Commando";
+
+    document.getElementById("mid-p").innerHTML = "Deathshead's Commandos (German: Totenkopfs Kommandoeinheiten) are elite members of the Schutzstaffel. They are infamous for being efficient, brutal, and merciless. Commandos are trained under the harshest of conditions in the Siberian training camps close to the dreaded Gulags. They all perished after the destruction of Deathshead's compound. (Anonymous Unknown)";
+
+    var arrPosition = 0;
+
+    var arr = ["Deathhead's Commando"];
+    console.log("Array contents: " + arr);
+
+    function dropDown() {
+        console.log("**** Drop down button functioning ***");
+        document.getElementById("line-drop-down").style.display = "block";
+    }
+
+    function leftButton() {
+        console.log("** Left button connected **")
+        if (arrPosition == 0) {
+            return;
+        }
+    }
+
+    function carrotShowLeft() {
+        console.log("** Carrot show function is connected **");
+        document.getElementById("leftCarrot").src = "../images/left-carrot-hover.png";
+    }
+
+    function carrotShowRight() {
+        console.log("** Carrot show function is connected **");
+        document.getElementById("rightCarrot").src = "../images/right-carrot-hover.png";
+    }
+
+    //document.getElementById("carrot-nav-btn").addEventListener("click", location.href="../index.html");
+    document.getElementById("left-btn").addEventListener("click", leftButton);
+    document.getElementById("left-btn").addEventListener("mouseenter", carrotShowLeft);
+    document.getElementById("right-btn").addEventListener("mouseenter", carrotShowRight);
+
+
+</script>
+
+</body>
+
+</html>
