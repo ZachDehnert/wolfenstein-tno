@@ -50,52 +50,52 @@ body {
     <div id="main-container">
 
         <nav id="chapter-nav" class="fixedElement">
-            <div class="chapter-nav-divs">
+            <div id="ch01" class="chapter-nav-divs">
                 <p>CH:1</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch02" class="chapter-nav-divs">
                 <p>CH:2</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch03" class="chapter-nav-divs">
                 <p>CH:3</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch04" class="chapter-nav-divs">
                 <p>CH:4</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch05" class="chapter-nav-divs">
                 <p>CH:5</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch06" class="chapter-nav-divs">
                 <p>CH:6</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch07" class="chapter-nav-divs">
                 <p>CH:7</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch08" class="chapter-nav-divs">
                 <p>CH:8</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch09" class="chapter-nav-divs">
                 <p>CH:9</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch10" class="chapter-nav-divs">
                 <p>CH:10</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch11" class="chapter-nav-divs">
                 <p>CH:11</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch12" class="chapter-nav-divs">
                 <p>CH:12</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch13" class="chapter-nav-divs">
                 <p>CH:13</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch14" class="chapter-nav-divs">
                 <p>CH:14</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch15" class="chapter-nav-divs">
                 <p>CH:15</p>
             </div>
-            <div class="chapter-nav-divs">
+            <div id="ch16" class="chapter-nav-divs">
                 <p>CH:16</p>
             </div>
 
@@ -120,7 +120,7 @@ body {
 
         <div id="chapter-one-holder">
 
-            <h1>Chapter 1</h1>
+            <h1 id="chapter-h1">Chapter 1- Deathshead's Compoud</h1>
 
             <div style="background-color: #000;width:640px;height:360;float:left;margin:2% 0 0 2%;">
 
@@ -128,11 +128,11 @@ body {
 
             </div>
 
-            <div id="chapter-one-summary">
+            <div id="chapter-summary">
 
-                <p>In this chapter, you are introduced to the main character and his supporting character while flying a bomber assaulting a Nazi compound. You play Captain William "B.J" Blazkowicz as a special forces soldier assaulting Deathshead’s compound. The two supporting characters are Fergus and Wyatt, Fergus is flying the bomber as a clearly experienced vet to war while Wyatt is a young wet-behind-the-ears soldier who is constantly on the verge of losing their mind from the war around them. You immediately see how outnumbered the allied forces are, but Blazko and his team push on and make it to the inner compound. This is where Blazko needs to make a very difficult decision. The story splits into two timelines at this point. You can play the Fergus timeline or the Wyatt timeline.</p>
+                <p class="chapter-p">In this chapter, you are introduced to the main character and his supporting character while flying a bomber assaulting a Nazi compound. You play Captain William "B.J" Blazkowicz as a special forces soldier assaulting Deathshead’s compound. The two supporting characters are Fergus and Wyatt, Fergus is flying the bomber as a clearly experienced vet to war while Wyatt is a young wet-behind-the-ears soldier who is constantly on the verge of losing their mind from the war around them. You immediately see how outnumbered the allied forces are, but Blazko and his team push on and make it to the inner compound. This is where Blazko needs to make a very difficult decision. The story splits into two timelines at this point. You can play the Fergus timeline or the Wyatt timeline.</p>
 
-                <p id="chapter-one-spoiler"><span style="font-weight: bold;text-decoration: underline;">Spoiler</span>: At the end of the chapter, Deathshead has you choose either Fergus to kill or Wyatt to kill. You find out later they are not dead but extracted from their bodies and put into a war machine.<input id="spoilerChapterOneHide" type="button" value="Hide spoiler"></p>
+                <p id="chapter-one-spoiler" class="chapter-p"><span style="font-weight: bold;text-decoration: underline;">Spoiler</span>: At the end of the chapter, Deathshead has you choose either Fergus to kill or Wyatt to kill. You find out later they are not dead but extracted from their bodies and put into a war machine.<input id="spoilerChapterOneHide" type="button" value="Hide spoiler"></p>
 
                 <input id="spoilerChapterOneShow" type="button" value="Show spoiler">
 
@@ -140,19 +140,146 @@ body {
 
             <div id="chapter-one-collectibles-container">
 
-                <div class="chp-one-collect-nav-top" onclick="enigmaContent()"><p>Enigma Codes</p></div>
-                <div class="chp-one-collect-nav-top"><p>Gold</p></div>
-                <div class="chp-one-collect-nav-top"><p>Letters</p></div>
-                <div id="chp-one-collect-content">
-                    <p>There are 7 Enigma codes in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                <div class="chp-one-collect-nav-top" onclick="enigmaContent()">
+                    <p class="chapter-nav-p">Enigma Codes</p>
+                </div>
+                <div class="chp-one-collect-nav-top" onclick="goldContent()">
+                    <p class="chapter-nav-p">Gold</p>
+                </div>
+                <div class="chp-one-collect-nav-top" onclick="letterContent()">
+                    <p class="chapter-nav-p">Letters</p>
+                </div>
+
+                <div id="chp-one-placeholder-content">
+                    <img id="img-place-holder" src="images/place-holder.jpg">
+                </div>
+
+                <div id="chp-one-enigma-content">
+                    <p class="chapter-mini-p">There are 7 Enigma Codes in this chapter. Click below to watch a walkthrough to collecting them all</p>
                     <div id="youtube-container">
                         <img id="youtube-img" src="images/youtube-img.png">
                     </div>
                 </div>
-                <div class="chp-one-collect-nav-bottom"><p>Concept Art</p></div>
-                <div class="chp-one-collect-nav-bottom"><p>Characters</p></div>
+
+                <div id="chp-one-gold-content">
+                    <p class="chapter-mini-p">There are 5 Gold items in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div id="chp-one-letter-content">
+                    <p class="chapter-mini-p">There is 1 Letter in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div id="chp-one-art-content">
+                    <p class="chapter-mini-p">There are 7 pieces of Art in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div id="chp-one-character-content">
+                    <p class="chapter-mini-p">There are 8 Characters in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div class="chp-one-collect-nav-bottom" onclick="artContent()">
+                    <p class="chapter-nav-p">Concept Art</p>
+                </div>
+                <div class="chp-one-collect-nav-bottom" onclick="characterContent()">
+                    <p class="chapter-nav-p">Characters</p>
+                </div>
 
             </div>
+
+        </div>
+
+        <div id="chapter-two-holder">
+
+            <h1 id="chapter-h1">Chapter 2 - Asylum</h1>
+
+            <div style="background-color: #000;width:640px;height:360;float:left;margin:2% 0 0 2%;">
+
+                <img style="padding:0% 0 0 0%;" src="images/chapter-two-obj.jpg">
+
+            </div>
+
+            <div id="chapter-summary">
+
+                <p class="chapter-p">This chapter begins fourteen years after the attack on Deathshead’s compound. Blazko was rescued by a family of doctors after taking shrapnel to the back of his head. Over the fourteen years, Blazko is in a vegetative state where he is cared for by Anya. Anya is a new supporting character that Blazko spends a lot of time with throughout the campaign. Blazko comes awake when he is urged to protect the family after a Nazi purge gone wrong leads to the death of the staff, disabled patients and Anya’s family. Blazko must regain his consciousness and save Anya.</p>
+
+                <p id="chapter-two-spoiler" class="chapter-p"><span style="font-weight: bold;text-decoration: underline;">Spoiler</span>: Anya is carried to a car where you can rescue her. In the middle of the game, Blazko and Anya fall in love and fight together to the end where Blazko ends up dying while dreaming of spending a normal life with Anya.<input id="spoilerChapterTwoHide" type="button" value="Hide spoiler"></p>
+
+                <input id="spoilerChapterTwoShow" type="button" value="Show spoiler">
+
+            </div>
+
+            <div id="chapter-one-collectibles-container">
+
+                <div class="chp-one-collect-nav-top" onclick="enigmaContent()">
+                    <p class="chapter-nav-p">Enigma Codes</p>
+                </div>
+                <div class="chp-one-collect-nav-top" onclick="goldContent()">
+                    <p class="chapter-nav-p">Gold</p>
+                </div>
+                <div class="chp-one-collect-nav-top" onclick="letterContent()">
+                    <p class="chapter-nav-p">Letters</p>
+                </div>
+
+                <div id="chp-one-placeholder-content">
+
+                </div>
+
+                <div id="chp-one-enigma-content">
+                    <p class="chapter-mini-p">There are 7 Enigma Codes in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div id="chp-one-gold-content">
+                    <p class="chapter-mini-p">There are 5 Gold items in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div id="chp-one-letter-content">
+                    <p class="chapter-mini-p">There is 1 Letter in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div id="chp-one-art-content">
+                    <p class="chapter-mini-p">There are 7 pieces of Art in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div id="chp-one-character-content">
+                    <p class="chapter-mini-p">There are 8 Characters in this chapter. Click below to watch a walkthrough to collecting them all</p>
+                    <div id="youtube-container">
+                        <img id="youtube-img" src="images/youtube-img.png">
+                    </div>
+                </div>
+
+                <div class="chp-one-collect-nav-bottom" onclick="artContent()">
+                    <p class="chapter-nav-p">Concept Art</p>
+                </div>
+                <div class="chp-one-collect-nav-bottom" onclick="characterContent()">
+                    <p class="chapter-nav-p">Characters</p>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -192,6 +319,51 @@ body {
         }
     }
 
+    function chOne() {
+        document.getElementById("chapter-one-holder").style.display = "block";
+        document.getElementById("chapter-two-holder").style.display = "none";
+        document.getElementById("chapter-thr-holder").style.display = "none";
+        document.getElementById("chapter-fou-holder").style.display = "none";
+        document.getElementById("chapter-fiv-holder").style.display = "none";
+        document.getElementById("chapter-six-holder").style.display = "none";
+        document.getElementById("chapter-sev-holder").style.display = "none";
+        document.getElementById("chapter-eig-holder").style.display = "none";
+        document.getElementById("chapter-nin-holder").style.display = "none";
+        document.getElementById("chapter-ten-holder").style.display = "none";
+        document.getElementById("chapter-ele-holder").style.display = "none";
+        document.getElementById("chapter-twe-holder").style.display = "none";
+        document.getElementById("chapter-thi-holder").style.display = "none";
+        document.getElementById("chapter-fou-holder").style.display = "none";
+        document.getElementById("chapter-fif-holder").style.display = "none";
+        document.getElementById("chapter-sixt-holder").style.display = "none";
+    }
+
+    function chTwo() {
+        document.getElementById("chapter-one-holder").style.display = "none";
+        document.getElementById("chapter-two-holder").style.display = "block";
+        document.getElementById("chapter-thr-holder").style.display = "none";
+        document.getElementById("chapter-fou-holder").style.display = "none";
+        document.getElementById("chapter-fiv-holder").style.display = "none";
+        document.getElementById("chapter-six-holder").style.display = "none";
+        document.getElementById("chapter-sev-holder").style.display = "none";
+        document.getElementById("chapter-eig-holder").style.display = "none";
+        document.getElementById("chapter-nin-holder").style.display = "none";
+        document.getElementById("chapter-ten-holder").style.display = "none";
+        document.getElementById("chapter-ele-holder").style.display = "none";
+        document.getElementById("chapter-twe-holder").style.display = "none";
+        document.getElementById("chapter-thi-holder").style.display = "none";
+        document.getElementById("chapter-fou-holder").style.display = "none";
+        document.getElementById("chapter-fif-holder").style.display = "none";
+        document.getElementById("chapter-sixt-holder").style.display = "none";
+    }
+
+    document.getElementById("ch01").addEventListener("click", chOne);
+    document.getElementById("ch02").addEventListener("click", chTwo);
+
+//-------------------------------------
+//  Chapter 1 Content
+//-------------------------------------
+
     function spoilerChapterOneShow() {
         console.log("Spoiler chapter one is connected");
         document.getElementById("chapter-one-spoiler").style.display = "block";
@@ -209,6 +381,121 @@ body {
 
     function enigmaContent() {
         console.log("Engima content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "block";
+        document.getElementById("chp-one-gold-content").style.display = "none";
+        document.getElementById("chp-one-letter-content").style.display = "none";
+        document.getElementById("chp-one-art-content").style.display = "none";
+        document.getElementById("chp-one-character-content").style.display = "none";
+    }
+
+    function goldContent() {
+        console.log("Gold content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "none";
+        document.getElementById("chp-one-gold-content").style.display = "block";
+        document.getElementById("chp-one-letter-content").style.display = "none";
+        document.getElementById("chp-one-art-content").style.display = "none";
+        document.getElementById("chp-one-character-content").style.display = "none";
+    }
+
+    function letterContent() {
+        console.log("Letter content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "none";
+        document.getElementById("chp-one-gold-content").style.display = "none";
+        document.getElementById("chp-one-letter-content").style.display = "block";
+        document.getElementById("chp-one-art-content").style.display = "none";
+        document.getElementById("chp-one-character-content").style.display = "none";
+    }
+
+    function artContent() {
+        console.log("Art content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "none";
+        document.getElementById("chp-one-gold-content").style.display = "none";
+        document.getElementById("chp-one-letter-content").style.display = "none";
+        document.getElementById("chp-one-art-content").style.display = "block";
+        document.getElementById("chp-one-character-content").style.display = "none";
+    }
+
+    function characterContent() {
+        console.log("Character content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "none";
+        document.getElementById("chp-one-gold-content").style.display = "none";
+        document.getElementById("chp-one-letter-content").style.display = "none";
+        document.getElementById("chp-one-art-content").style.display = "none";
+        document.getElementById("chp-one-character-content").style.display = "block";
+    }
+
+//-------------------------------------
+//  Chapter 2 Content
+//-------------------------------------
+
+function spoilerChapterTwoShow() {
+        console.log("Spoiler chapter one is connected");
+        document.getElementById("chapter-two-spoiler").style.display = "block";
+        document.getElementById("spoilerChapterTwoShow").style.display = "none";
+    }
+
+    function spoilerChapterTwoHide() {
+        console.log("Spoiler chapter one is connected");
+        document.getElementById("chapter-two-spoiler").style.display = "none";
+        document.getElementById("spoilerChapterTwoShow").style.display = "block";
+    }
+
+    document.getElementById("spoilerChapterTwoShow").addEventListener("click", spoilerChapterTwoShow);
+    document.getElementById("spoilerChapterTwoHide").addEventListener("click", spoilerChapterTwoHide);
+
+    function enigmaContent() {
+        console.log("Engima content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "block";
+        document.getElementById("chp-one-gold-content").style.display = "none";
+        document.getElementById("chp-one-letter-content").style.display = "none";
+        document.getElementById("chp-one-art-content").style.display = "none";
+        document.getElementById("chp-one-character-content").style.display = "none";
+    }
+
+    function goldContent() {
+        console.log("Gold content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "none";
+        document.getElementById("chp-one-gold-content").style.display = "block";
+        document.getElementById("chp-one-letter-content").style.display = "none";
+        document.getElementById("chp-one-art-content").style.display = "none";
+        document.getElementById("chp-one-character-content").style.display = "none";
+    }
+
+    function letterContent() {
+        console.log("Letter content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "none";
+        document.getElementById("chp-one-gold-content").style.display = "none";
+        document.getElementById("chp-one-letter-content").style.display = "block";
+        document.getElementById("chp-one-art-content").style.display = "none";
+        document.getElementById("chp-one-character-content").style.display = "none";
+    }
+
+    function artContent() {
+        console.log("Art content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "none";
+        document.getElementById("chp-one-gold-content").style.display = "none";
+        document.getElementById("chp-one-letter-content").style.display = "none";
+        document.getElementById("chp-one-art-content").style.display = "block";
+        document.getElementById("chp-one-character-content").style.display = "none";
+    }
+
+    function characterContent() {
+        console.log("Character content is loaded");
+        document.getElementById("chp-one-placeholder-content").style.display = "none";
+        document.getElementById("chp-one-enigma-content").style.display = "none";
+        document.getElementById("chp-one-gold-content").style.display = "none";
+        document.getElementById("chp-one-letter-content").style.display = "none";
+        document.getElementById("chp-one-art-content").style.display = "none";
+        document.getElementById("chp-one-character-content").style.display = "block";
     }
 
 </script>

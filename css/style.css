@@ -60,13 +60,6 @@ a:hover {
     z-index:1000;
 }
 
-.fixedElement {
-    background-color: #c0c0c0;
-    position:fixed;
-    top:0;
-    width:100%;
-}
-
 .line-nav-btn {
     background-image: url("../images/lines-nav-btn.png");
     width:50px;
@@ -90,8 +83,9 @@ a:hover {
     width:150px;
     height:50px;
 }
-
-
+/*
+/   Anchored Nav
+*/
 
 #line-drop-down {
     display:none;
@@ -153,6 +147,17 @@ a:hover {
     height:100%;
 }
 
+.fixedElement {
+    background-color: #c0c0c0;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+/*
+/   Horizontal Line
+*/
+
 #page-splitter {
     background-color: #000;
     width:100%;
@@ -171,41 +176,83 @@ a:hover {
     margin:0px auto;
 }
 
+/*
+/ Chapter One Spoilers
+*/
+
 #chapter-one-spoiler {
     display:none;
 }
 
-#spoilerChapterOneShow {
-    color:#fff;
-    background-color: #000;
-    border:1px solid #fff;
-    padding:5px 5px 5px 5px;
+    #spoilerChapterOneShow {
+        color:#fff;
+        background-color: #000;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
+
+    #spoilerChapterOneShow:hover {
+        color:#000;
+        background-color: #fff;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
+
+    #spoilerChapterOneHide {
+        float:right;
+        color:#fff;
+        background-color: #000;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
+
+    #spoilerChapterOneHide:hover {
+        float:right;
+        color:#000;
+        background-color: #fff;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
+
+/*
+/ Chapter Two Spoilers
+*/
+
+#chapter-two-spoiler {
+    display:none;
 }
 
-#spoilerChapterOneShow:hover {
-    color:#000;
-    background-color: #fff;
-    border:1px solid #fff;
-    padding:5px 5px 5px 5px;
-}
+    #spoilerChapterTwoShow {
+        color:#fff;
+        background-color: #000;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
 
-#spoilerChapterOneHide {
-    float:right;
-    color:#fff;
-    background-color: #000;
-    border:1px solid #fff;
-    padding:5px 5px 5px 5px;
-}
+    #spoilerChapterTwoShow:hover {
+        color:#000;
+        background-color: #fff;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
 
-#spoilerChapterOneHide:hover {
-    float:right;
-    color:#000;
-    background-color: #fff;
-    border:1px solid #fff;
-    padding:5px 5px 5px 5px;
-}
+    #spoilerChapterTwoHide {
+        float:right;
+        color:#fff;
+        background-color: #000;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
 
-#chapter-one-summary {
+    #spoilerChapterTwoHide:hover {
+        float:right;
+        color:#000;
+        background-color: #fff;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
+
+#chapter-summary {
     background-color: #000;
     width:35%;
     float:left;
@@ -219,46 +266,97 @@ a:hover {
     background-color: #7a0000;
     float:left;
     margin:2% 0 0 2%;
+    display:block;
 }
 
-#chapter-one-collectibles-container p {
-    width:100%;
-    text-align: center;
-}
 
-.chp-one-collect-nav-top {
-    background-color: #222;
-    overflow: hidden;
-    width:150px;
-    float:left;
-}
 
-.chp-one-collect-nav-top:hover {
+            .chapter-mini-p {
+                text-align: left;
+                padding:10% 4% 0 4%;
+                color:#222;
+            }
+
+            .chp-one-collect-nav-top {
+                background-color: #222;
+                overflow: hidden;
+                width:150px;
+                float:left;
+            }
+
+            .chp-one-collect-nav-top:hover {
+                background-color: #7a0000;
+                overflow: hidden;
+                width:150px;
+                float:left;
+            }
+
+            #img-place-holder {
+                padding:10% 22%;
+            }
+
+            #chp-one-placeholder-content {
+                background-color: #f6f6f6;
+                width:100%;
+                height:330px;
+                display:block;
+            }
+
+            #chp-one-enigma-content {
+                background-color: #f6f6f6;
+                width:100%;
+                height:330px;
+                display:none;
+            }
+
+            #chp-one-gold-content {
+                background-color: #f6f6f6;
+                width:100%;
+                height:330px;
+                display:none;
+            }
+
+            #chp-one-letter-content {
+                background-color: #f6f6f6;
+                width:100%;
+                height:330px;
+                display:none;
+            }
+
+            #chp-one-art-content {
+                background-color: #f6f6f6;
+                width:100%;
+                height:330px;
+                display:none;
+            }
+
+            #chp-one-character-content {
+                background-color: #f6f6f6;
+                width:100%;
+                height:330px;
+                display:none;
+            }
+
+#chapter-two-collectibles-container {
+    width:450px;
+    height:360px;
     background-color: #7a0000;
-    overflow: hidden;
-    width:150px;
     float:left;
-}
-
-#chp-one-collect-content {
-    background-color: #000;
-    width:100%;
-    height:330px;
-    border-left:1px solid #fff;
-    border-right:1px solid #fff;
+    margin:2% 0 0 2%;
+    display:none;
 }
 
 #youtube-img {
     width:50%;
     height:50%;
     display:block;
-    margin:0px auto;
+    margin:20px auto;
 }
 
 #youtube-container {
     width:100%;
     height:auto;
-    background-color: #000;
+    background-color: #f6f6f6;
     overflow: hidden;
 }
 
@@ -288,14 +386,30 @@ a:hover {
     line-height: 30px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
+    display:block;
 }
 
-#chapter-one-holder p {
+#chapter-two-holder {
+    width:100%;
+    height:1000px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    display:none;
+}
+
+.chapter-p {
     color:#fff;
     float:left;
+
 }
 
-#chapter-one-holder h1 {
+.chapter-nav-p {
+    color:#fff;
+    text-align: center;
+}
+
+#chapter-h1 {
     color:#fff;
     font-family: Arial, Helvetica, sans-serif;
     padding:2% 0 0 2%;
