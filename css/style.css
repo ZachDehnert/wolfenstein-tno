@@ -260,7 +260,44 @@ a:hover {
     height:360px;
 }
 
-#chapter-one-collectibles-container {
+/*
+/   Collectables Mini Chapter Nav
+*/
+
+.collectable-nav-top {
+    background-color: #222;
+    overflow: hidden;
+    width:150px;
+    float:left;
+}
+
+.collectable-nav-top:hover {
+    background-color: #7a0000;
+    overflow: hidden;
+    width:150px;
+    float:left;
+}
+
+.collectable-nav-bottom {
+    background-color: #222;
+    color:#fff;
+    overflow: hidden;
+    width:225px;
+    float:left;
+}
+
+.collectable-nav-bottom:hover {
+    background-color: #7a0000;
+    overflow: hidden;
+    width:225px;
+    float:left;
+}
+
+/*
+/   Collectables Content Styles
+*/
+
+#collectibles-container {
     width:450px;
     height:360px;
     background-color: #7a0000;
@@ -277,60 +314,46 @@ a:hover {
                 color:#222;
             }
 
-            .chp-one-collect-nav-top {
-                background-color: #222;
-                overflow: hidden;
-                width:150px;
-                float:left;
-            }
-
-            .chp-one-collect-nav-top:hover {
-                background-color: #7a0000;
-                overflow: hidden;
-                width:150px;
-                float:left;
-            }
-
             #img-place-holder {
                 padding:10% 22%;
             }
 
-            #chp-one-placeholder-content {
+            #section-0 {
                 background-color: #f6f6f6;
                 width:100%;
                 height:330px;
                 display:block;
             }
 
-            #chp-one-enigma-content {
+            #section-1 {
                 background-color: #f6f6f6;
                 width:100%;
                 height:330px;
                 display:none;
             }
 
-            #chp-one-gold-content {
+            #section-2 {
                 background-color: #f6f6f6;
                 width:100%;
                 height:330px;
                 display:none;
             }
 
-            #chp-one-letter-content {
+            #letter {
                 background-color: #f6f6f6;
                 width:100%;
                 height:330px;
                 display:none;
             }
 
-            #chp-one-art-content {
+            #art {
                 background-color: #f6f6f6;
                 width:100%;
                 height:330px;
                 display:none;
             }
 
-            #chp-one-character-content {
+            #character {
                 background-color: #f6f6f6;
                 width:100%;
                 height:330px;
@@ -364,20 +387,6 @@ a:hover {
     width:100%;
     text-align: left;
     padding:3%;
-}
-
-.chp-one-collect-nav-bottom {
-    background-color: #222;
-    overflow: hidden;
-    width:225px;
-    float:left;
-}
-
-.chp-one-collect-nav-bottom:hover {
-    background-color: #7a0000;
-    overflow: hidden;
-    width:225px;
-    float:left;
 }
 
 #chapter-one-holder {
