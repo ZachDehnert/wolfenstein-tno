@@ -27,10 +27,10 @@
 
         <div id="header-nav">
 
-            <div id="btn-1"><p><img id="three-lines-icon" src="images/mobile/three-lines.png"></p></div>
-            <div id="drop-down-container"></div>
+            <div id="btn-1" class="btn-1"><p><img id="three-lines-icon" src="images/mobile/three-lines.png"></p></div>
             <div id="btn-2"><p><img id="title" src="images/mobile/title.png"></p></div>
             <div id="btn-3"><p><img id="search-icon" src="images/mobile/search-icon.png"></p></div>
+            <div id="drop-down-container"></div>
 
         </div>
 
@@ -61,8 +61,26 @@
     </div>
 
     <script>
+
+        console.log("******* ******* Internal JS is connected ******* *******");
+
+        function dropDown() {
+
+            console.log("**** Drop down button functioning ***");
+
+            var displayValue = document.getElementById("drop-down-container").style.display;
+
+            if (displayValue == "block") {
+                console.log("The display for the drop down is block");
+            } else {
+                console.log("The current display value is none");
+            }
+
+        }
+
+
     
-        document.getElementById("btn-1").addEventListener("click", dropDown )
+        document.getElementById("btn-1").addEventListener("click", dropDown);
 
 
     
