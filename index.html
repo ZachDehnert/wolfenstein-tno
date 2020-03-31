@@ -28,9 +28,16 @@
         <div id="header-nav">
 
             <div id="btn-1" class="btn-1"><p><img id="three-lines-icon" src="images/mobile/three-lines.png"></p></div>
+            <div id="btn-1-a" class="btn-1"><p><img id="three-lines-icon" src="images/mobile/three-lines-white.png"></p></div>
             <div id="btn-2"><p><img id="title" src="images/mobile/title.png"></p></div>
             <div id="btn-3"><p><img id="search-icon" src="images/mobile/search-icon.png"></p></div>
-            <div id="drop-down-container"></div>
+            <div id="drop-down-container">
+                <div id="top-dd-nav-btn"><p>Chapter Selection</p></div>
+                <div class="dd-nav-btn" id="dd-nav-btn-e"><p>Enigma Codes</p></div>
+                <div class="dd-nav-btn" id="dd-nav-btn-c"><p>Collectables</p>></div>
+                <div class="dd-nav-btn" id="dd-nav-btn-a"><p>Achievements</p></div>
+                <div id="wolfenstein-icon"></div>
+            </div>
 
         </div>
 
@@ -51,6 +58,8 @@
 
 
 
+
+
     </div>
 
     <div id="footer">
@@ -64,14 +73,39 @@
 
         console.log("******* ******* Internal JS is connected ******* *******");
 
-        function dropDown() {
+
+        function btnHighLight() {
+
+            document.getElementById("btn-1").style.display = "none";
+            document.getElementById("btn-1-a").style.display = "block";
+            document.getElementById("drop-down-container").style.display = "block";
+
+        }
+
+        function btnHighLightA() {
+
+            document.getElementById("btn-1").style.display = "block";
+            document.getElementById("btn-1-a").style.display = "none";
+            document.getElementById("drop-down-container").style.display = "none";
+
+        }
+        
+
+        var displayVal = document.getElementById("drop-down-container").style.display;
+
+        console.log("Current value: " + displayVal);
+
+        function dropDown_OLD() {
 
             console.log("**** Drop down button functioning ***");
 
             var displayValue = document.getElementById("drop-down-container").style.display;
 
+            console.log("Current display mode: " + displayValue);
+
             if (displayValue == "block") {
                 console.log("The display for the drop down is block");
+                document.getElementById("drop-down-container").style.display = none;
             } else {
                 console.log("The current display value is none");
             }
@@ -80,7 +114,8 @@
 
 
     
-        document.getElementById("btn-1").addEventListener("click", dropDown);
+        document.getElementById("btn-1").addEventListener("click", btnHighLight);
+        document.getElementById("btn-1-a").addEventListener("click", btnHighLightA);
 
 
     

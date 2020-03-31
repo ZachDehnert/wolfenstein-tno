@@ -54,6 +54,7 @@ body {
             width:25vw;
             height:20vw;
             position: relative;
+            display:block;
         }
 
             #btn-1 p {
@@ -71,6 +72,31 @@ body {
                 width:100%;
 
             }
+
+                #btn-1-a {
+                    background-color: #000;
+                    float:left;
+                    width:25vw;
+                    height:20vw;
+                    position: relative;
+                    display:none;
+                }
+        
+                    #btn-1-a p {
+                        margin:0;
+                        background-color: transparent;
+                        position: absolute;
+                        top:50%;
+                        left:50%;
+                        margin-right:-50%;
+                        transform: translate(-50%, -50%);
+                        color:#fff;
+                    }
+        
+                    #three-lines-icon {
+                        width:100%;
+        
+                    }
 
         /* #btn-1:hover {
             background-color: #fff;
@@ -129,10 +155,40 @@ body {
 
     #drop-down-container {
         width:100%;
-        height:100vw;
+        height:100vh;
         background-color: turquoise;
         clear:both;
         display:none;
+    }
+
+    #top-dd-nav-btn {
+        border-top:1px solid #b20000;
+        border-bottom:1px solid #fff;
+        background-color: #000;
+    }
+
+        #top-dd-nav-btn p {
+            padding: 3vh;
+            color:#fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    .dd-nav-btn {
+        border-bottom:1px solid #fff;
+        background-color: #000;
+        max-height: 10vh;
+    }
+
+        .dd-nav-btn p {
+            padding: 3vh;
+            color:#fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    #wolfenstein-icon {
+        width:100%;
+        height:50vh;
+        background-image: url("../images/mobile/wolfenstein-icon.jpg");
     }
 
     #header-footer {
@@ -303,6 +359,7 @@ body {
         width:25vw;
         height:15vw;
         position: relative;
+        display: block;
     }
 
         #btn-1 p {
@@ -321,6 +378,31 @@ body {
             background-color: #000;
 
         }
+
+            #btn-1-a {
+                background-color: #000;
+                float:left;
+                width:25vw;
+                height:15vw;
+                position: relative;
+                display:none;
+            }
+
+                #btn-1-a p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:40%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+
+                #three-lines-icon {
+                    width:150%;
+
+                }
 
     #btn-2 {
         background-color: #000;
@@ -368,6 +450,49 @@ body {
         #search-icon {
             width:70%;
         }
+
+        #drop-down-container {
+            width:100%;
+            height:100vh;
+            background-color: turquoise;
+            clear:both;
+            display:none;
+        }
+    
+        #top-dd-nav-btn {
+            border-top:1px solid #b20000;
+            border-bottom:1px solid #fff;
+            background-color: #000;
+        }
+    
+            #top-dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+    
+        .dd-nav-btn {
+            border-bottom:1px solid #fff;
+            background-color: #000;
+            max-height: 10vh;
+        }
+    
+            .dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+        #wolfenstein-icon {
+            width:100%;
+            height:60vh;
+            background-image: url("../images/mobile/wolfenstein-icon.jpg");
+            background-repeat: no-repeat;
+            background-color: #000;
+            background-attachment: fixed;
+            background-position: bottom;
+        }
+
 }
 
 /* --------------------------------------------------------------------------------------------------
@@ -390,7 +515,19 @@ body {
 
 /* --------------------------------------------------------------------------------------------------
 -
--       Next Highest Resolution: Phablets
+-       Next Highest Resolution: Phablets I
+-
+---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:650px) {
+
+
+
+}
+
+/* --------------------------------------------------------------------------------------------------
+-
+-       Next Highest Resolution: Phablets II
 -
 ---------------------------------------------------------------------------------------------------*/
 
@@ -484,6 +621,13 @@ body {
                 width:75%;
             }
 
+        #divider {
+            width:100%;
+            height:50px;
+            background-image: url("../images/mobile/red-horizontal-line-larger.png");
+            background-size:100%;
+        }
+
 }
 
 /* --------------------------------------------------------------------------------------------------
@@ -496,15 +640,16 @@ body {
 
 #header {
     width:100%;
-    height:1080px;
+    height:55vh;
     background-image: url("../images/desktop/bg.jpg");
     background-size:100%;
+    background-repeat: no-repeat;
     /* border:1px solid pink; */
 }
 
     #header-nav {
         width:100%;
-        height:4vw;
+        height:6vw;
         background-color:#000;
 
     }
@@ -529,7 +674,8 @@ body {
             }
 
             #three-lines-icon {
-                width:150%;
+                width:100%;
+                margin-top:1vw;
 
             }
 
@@ -563,8 +709,9 @@ body {
             }
 
             #title {
-                width:20%;
+                width:30%;
                 height:auto;
+                margin-top:1vw;
             }
 
         #btn-3 {
@@ -587,8 +734,120 @@ body {
             }
     
             #search-icon {
-                width:75%;
+                width:55%;
+                margin-top:1vw;
             }
+
+}
+
+/* --------------------------------------------------------------------------------------------------
+-
+-       Next Highest Resolution: Tablets
+-
+---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:950px) {
+
+#header {
+    width:100%;
+    height:65vh;
+    background-image: url("../images/desktop/bg.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    /* border:1px solid pink; */
+}
+
+    #header-nav {
+        width:100%;
+        height:6vw;
+        background-color:#000;
+
+    }
+
+        #btn-1 {
+            background-color: #000;
+            float:left;
+            width:8vw;
+            height:4vw;
+            position: relative;
+        }
+
+            #btn-1 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+
+            #three-lines-icon {
+                width:100%;
+                margin-top:1vw;
+
+            }
+
+            /* #btn-1:hover {
+                background-color: #fff;
+                float:left;
+                width:25vw;
+                height:20vw;
+                position: relative;
+            } */
+
+
+
+        #btn-2 {
+            background-color: #000;
+            float:left;
+            width:40vw;
+            height:4vw;
+            position: relative;
+        }
+
+            #btn-2 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+
+            #title {
+                width:30%;
+                height:auto;
+                margin-top:1vw;
+            }
+
+        #btn-3 {
+            background-color: #000;
+            float:right;
+            width:20vw;
+            height:4vw;
+            position: relative;
+        }
+    
+            #btn-3 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+    
+            #search-icon {
+                width:55%;
+                margin-top:1vw;
+            }
+
 
 }
 
@@ -602,7 +861,7 @@ body {
 
     #header {
         width:100%;
-        height:1080px;
+        height:75vh;
         background-image: url("../images/desktop/bg.jpg");
         background-repeat: no-repeat;
         background-size:100%;
@@ -611,7 +870,7 @@ body {
     
         #header-nav {
             width:100%;
-            height:4vw;
+            height:6vw;
             background-color:#000;
     
         }
@@ -636,7 +895,8 @@ body {
                 }
     
                 #three-lines-icon {
-                    width:70%;
+                    width:100%;
+                    margin-top:1vw;
     
                 }
     
@@ -670,8 +930,9 @@ body {
                 }
     
                 #title {
-                    width:20%;
+                    width:30%;
                     height:auto;
+                    margin-top:1vw;
                 }
     
             #btn-3 {
@@ -698,3 +959,333 @@ body {
                 }
     
     }
+
+/* --------------------------------------------------------------------------------------------------
+-
+-       Next Highest Resolution: Desktop II
+-
+---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:1330px) {
+
+    #header {
+        width:100%;
+        height:85vh;
+        background-image: url("../images/desktop/bg.jpg");
+        background-repeat: no-repeat;
+        background-size:100%;
+        /* border:1px solid pink; */
+    }
+    
+        #header-nav {
+            width:100%;
+            height:6vw;
+            background-color:#000;
+    
+        }
+    
+            #btn-1 {
+                background-color: #000;
+                float:left;
+                width:8vw;
+                height:4vw;
+                position: relative;
+            }
+    
+                #btn-1 p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+    
+                #three-lines-icon {
+                    width:100%;
+                    margin-top:1vw;
+    
+                }
+    
+                /* #btn-1:hover {
+                    background-color: #fff;
+                    float:left;
+                    width:25vw;
+                    height:20vw;
+                    position: relative;
+                } */
+    
+    
+    
+            #btn-2 {
+                background-color: #000;
+                float:left;
+                width:40vw;
+                height:4vw;
+                position: relative;
+            }
+    
+                #btn-2 p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+    
+                #title {
+                    width:30%;
+                    height:auto;
+                    margin-top:1vw;
+                }
+    
+            #btn-3 {
+                background-color: #000;
+                float:right;
+                width:20vw;
+                height:4vw;
+                position: relative;
+            }
+        
+                #btn-3 p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+        
+                #search-icon {
+                    width:75%;
+                }
+
+
+}
+
+/* --------------------------------------------------------------------------------------------------
+-
+-       Next Highest Resolution: Desktop III
+-
+---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:1550px) {
+
+#header {
+    width:100%;
+    height:95vh;
+    background-image: url("../images/desktop/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    /* border:1px solid pink; */
+}
+
+    #header-nav {
+        width:100%;
+        height:6vw;
+        background-color:#000;
+
+    }
+
+        #btn-1 {
+            background-color: #000;
+            float:left;
+            width:8vw;
+            height:4vw;
+            position: relative;
+        }
+
+            #btn-1 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+
+            #three-lines-icon {
+                width:100%;
+                margin-top:1vw;
+
+            }
+
+            /* #btn-1:hover {
+                background-color: #fff;
+                float:left;
+                width:25vw;
+                height:20vw;
+                position: relative;
+            } */
+
+
+
+        #btn-2 {
+            background-color: #000;
+            float:left;
+            width:40vw;
+            height:4vw;
+            position: relative;
+        }
+
+            #btn-2 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+
+            #title {
+                width:30%;
+                height:auto;
+                margin-top:1vw;
+            }
+
+        #btn-3 {
+            background-color: #000;
+            float:right;
+            width:20vw;
+            height:4vw;
+            position: relative;
+        }
+    
+            #btn-3 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+    
+            #search-icon {
+                width:75%;
+            }
+
+
+}
+
+/* --------------------------------------------------------------------------------------------------
+-
+-       Next Highest Resolution: Desktop IV
+-
+---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:1750px) {
+
+#header {
+    width:100%;
+    height:100vh;
+    background-image: url("../images/desktop/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    /* border:1px solid pink; */
+}
+
+    #header-nav {
+        width:100%;
+        height:6vw;
+        background-color:#000;
+
+    }
+
+        #btn-1 {
+            background-color: #000;
+            float:left;
+            width:8vw;
+            height:4vw;
+            position: relative;
+        }
+
+            #btn-1 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+
+            #three-lines-icon {
+                width:100%;
+                margin-top:1vw;
+
+            }
+
+            /* #btn-1:hover {
+                background-color: #fff;
+                float:left;
+                width:25vw;
+                height:20vw;
+                position: relative;
+            } */
+
+
+
+        #btn-2 {
+            background-color: #000;
+            float:left;
+            width:40vw;
+            height:4vw;
+            position: relative;
+        }
+
+            #btn-2 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+
+            #title {
+                width:30%;
+                height:auto;
+                margin-top:1vw;
+            }
+
+        #btn-3 {
+            background-color: #000;
+            float:right;
+            width:20vw;
+            height:4vw;
+            position: relative;
+        }
+    
+            #btn-3 p {
+                margin:0;
+                background-color: transparent;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-right:-50%;
+                transform: translate(-50%, -50%);
+                color:#fff;
+            }
+    
+            #search-icon {
+                width:75%;
+            }  
+
+
+}
