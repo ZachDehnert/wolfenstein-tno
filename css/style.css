@@ -157,6 +157,7 @@ body {
             border-top:1px solid #b20000;
             border-bottom:1px solid #fff;
             background-color: #000;
+            height:17vw;
         }
 
             #top-dd-nav-btn p {
@@ -168,7 +169,7 @@ body {
         .dd-nav-btn {
             border-bottom:1px solid #fff;
             background-color: #000;
-            max-height: 10vh;
+            height:17vw;
         }
 
             .dd-nav-btn p {
@@ -196,7 +197,7 @@ body {
 
 #main {
     width:100%;
-    height:650px;
+    height:850px;
     /* background-image: url("../images/mobile/bg.jpg"); */
     background-color: #000;
 }
@@ -209,7 +210,7 @@ body {
         border-bottom:1px solid #fff;
     }
 
-        #btn-left {
+        .btn-left {
             background-color: #000;
             float:left;
             width:20vw;
@@ -218,7 +219,7 @@ body {
             
         }
 
-            #btn-left p {
+            .btn-left p {
                 margin:0;
                 background-color: transparent;
                 position: absolute;
@@ -253,7 +254,7 @@ body {
                 font-weight: bold;
             }
 
-        #btn-right {
+        .btn-right {
             background-color: #000;
             float:right;
             width:20vw;
@@ -262,7 +263,7 @@ body {
             
         }
 
-            #btn-right p {
+            .btn-right p {
                 margin:0;
                 background-color: transparent;
                 position: absolute;
@@ -274,6 +275,45 @@ body {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-weight: bold;
             }
+    
+    #chpt-1-img {
+        width:74vw;
+        height:28vh;
+        margin:10vw;
+        border:1px solid #b20000;
+    }
+
+    #chapter-summary {
+        /* border:1px solid #b20000; */
+        margin-right:5vw;
+        margin-left:5vw;
+        margin-bottom:10vw;
+        font-size: 10pt;
+    }
+
+    .chapter-p {
+        color:#fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #chapter-one-spoiler {
+        display:none;
+    }
+
+    #spoilerChapterOneShow {
+        color:#fff;
+        background-color: #000;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
+
+    #spoilerChapterOneHide {
+        float:right;
+        color:#fff;
+        background-color: #000;
+        border:1px solid #fff;
+        padding:5px 5px 5px 5px;
+    }
 
 #footer {
     width:100%;
@@ -1082,7 +1122,7 @@ body {
             border-bottom:1px solid #fff;
         }
     
-            #btn-left {
+            .btn-left {
                 background-color: #000;
                 float:left;
                 width:20vw;
@@ -1091,7 +1131,7 @@ body {
                 
             }
     
-                #btn-left p {
+                .btn-left p {
                     margin:0;
                     background-color: transparent;
                     position: absolute;
@@ -1128,7 +1168,7 @@ body {
                     font-size: 24pt;
                 }
     
-            #btn-right {
+            .btn-right {
                 background-color: #000;
                 float:right;
                 width:20vw;
@@ -1137,7 +1177,7 @@ body {
                 
             }
     
-                #btn-right p {
+                .btn-right p {
                     margin:0;
                     background-color: transparent;
                     position: absolute;

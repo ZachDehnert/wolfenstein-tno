@@ -44,19 +44,80 @@
     </div>
 
     <div id="main">
+
+        
         
         <div id="divider"></div>
 
-        <div id="main-nav">
+        <!-- -------------------------------------------------------------------------------------
+        -
+        - Chapter One Display Section
+        -
+        -------------------------------------------------------------------------------------- -->
 
-            <div id="btn-left"><p><</p></div>
-            <div id="chapter-heading"><p>CHAPTER 01</p></div>
-            <div id="btn-right"><p>></p></div>
+        <div id="chapter-one-holder">
+
+            <div id="main-nav">
+
+                <div class="btn-left"><p></p></div>
+                <div id="chapter-heading"><p>CHAPTER 01</p></div>
+                <div class="btn-right"><p id="ch02">></p></div>
+
+            </div>
+
+            <div id="image-container">
+
+                <img id="chpt-1-img" src="images/mobile/Chapter One Header Image.jpg">
+
+                <div id="chapter-summary">
+
+                    <p class="chapter-p">In this chapter, you are introduced to the main character and his supporting character while flying a bomber assaulting a Nazi compound. You play Captain William "B.J" Blazkowicz as a special forces soldier assaulting Deathshead’s compound. The two supporting characters are Fergus and Wyatt, Fergus is flying the bomber as a clearly experienced vet to war while Wyatt is a young wet-behind-the-ears soldier who is constantly on the verge of losing their mind from the war around them. You immediately see how outnumbered the allied forces are, but Blazko and his team push on and make it to the inner compound. This is where Blazko needs to make a very difficult decision. The story splits into two timelines at this point. You can play the Fergus timeline or the Wyatt timeline.</p>
+
+                    <p id="chapter-one-spoiler" class="chapter-p"><span style="font-weight: bold;text-decoration: underline;">Spoiler</span>: At the end of the chapter, Deathshead has you choose either Fergus to kill or Wyatt to kill. You find out later they are not dead but extracted from their bodies and put into a war machine.<input id="spoilerChapterOneHide" type="button" value="Hide spoiler"></p>
+
+                    <input id="spoilerChapterOneShow" type="button" value="Show spoiler">
+
+                </div>
+
+
+            </div>
 
         </div>
 
+        <!-- -------------------------------------------------------------------------------------
+        -
+        - Chapter Two Display Section
+        -
+        -------------------------------------------------------------------------------------- -->
+
+        <div id="chapter-two-holder">
+
+            <div id="main-nav">
+
+                <div class="btn-left"><p id="ch01"><</p></div>
+                <div id="chapter-heading"><p>CHAPTER 02</p></div>
+                <div class="btn-right" id="ch03"><p>></p></div>
+
+            </div>
+
+            <div id="image-container">
+
+                <img id="chpt-1-img" src="images/mobile/Chapter Two Header Image.jpg">
+
+                <div id="chapter-summary">
+
+                    <p class="chapter-p">In this chapter, you are introduced to the main character and his supporting character while flying a bomber assaulting a Nazi compound. You play Captain William "B.J" Blazkowicz as a special forces soldier assaulting Deathshead’s compound. The two supporting characters are Fergus and Wyatt, Fergus is flying the bomber as a clearly experienced vet to war while Wyatt is a young wet-behind-the-ears soldier who is constantly on the verge of losing their mind from the war around them. You immediately see how outnumbered the allied forces are, but Blazko and his team push on and make it to the inner compound. This is where Blazko needs to make a very difficult decision. The story splits into two timelines at this point. You can play the Fergus timeline or the Wyatt timeline.</p>
+
+                    <p id="chapter-one-spoiler" class="chapter-p"><span style="font-weight: bold;text-decoration: underline;">Spoiler</span>: At the end of the chapter, Deathshead has you choose either Fergus to kill or Wyatt to kill. You find out later they are not dead but extracted from their bodies and put into a war machine.<input id="spoilerChapterOneHide" type="button" value="Hide spoiler"></p>
+
+                    <input id="spoilerChapterOneShow" type="button" value="Show spoiler">
+
+                </div>
 
 
+            </div>
+
+        </div>
 
 
 
@@ -72,6 +133,9 @@
     <script>
 
         console.log("******* ******* Internal JS is connected ******* *******");
+
+        document.getElementById("chapter-two-holder").style.display = "none";
+
 
         // 
         // Drop Down Menu: Start
@@ -102,6 +166,42 @@
         // 
         // Drop Down Menu: End
         //
+
+        //
+        // Chapter 1 Content
+        //
+
+            function spoilerChapterOneShow() {
+                console.log("Spoiler chapter one is connected");
+                document.getElementById("chapter-one-spoiler").style.display = "block";
+                document.getElementById("spoilerChapterOneShow").style.display = "none";
+            }
+
+            function spoilerChapterOneHide() {
+                console.log("Spoiler chapter one is connected");
+                document.getElementById("chapter-one-spoiler").style.display = "none";
+                document.getElementById("spoilerChapterOneShow").style.display = "block";
+            }
+
+            document.getElementById("spoilerChapterOneShow").addEventListener("click", spoilerChapterOneShow);
+            document.getElementById("spoilerChapterOneHide").addEventListener("click", spoilerChapterOneHide);
+
+            document.getElementById("ch01").addEventListener("click", chOne);
+            document.getElementById("ch02").addEventListener("click", chTwo);
+
+            function chOne() {
+                console.log("Chapter 1 is loaded");
+                document.getElementById("chapter-one-holder").style.display = "block";
+                document.getElementById("chapter-two-holder").style.display = "none";
+
+            }
+            
+            function chTwo() {
+                console.log("Chapter 2 is loaded");
+                document.getElementById("chapter-one-holder").style.display = "none";
+                document.getElementById("chapter-two-holder").style.display = "block";
+
+            }
     
     </script>
 
