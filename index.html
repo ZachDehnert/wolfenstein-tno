@@ -73,51 +73,35 @@
 
         console.log("******* ******* Internal JS is connected ******* *******");
 
+        // 
+        // Drop Down Menu: Start
+        //
+        // This is for the three-line button that rolls out the drop down
+        // with items like Chapter Selection
+        // 
 
-        function btnHighLight() {
+            function btnHighLight() {
 
-            document.getElementById("btn-1").style.display = "none";
-            document.getElementById("btn-1-a").style.display = "block";
-            document.getElementById("drop-down-container").style.display = "block";
+                document.getElementById("btn-1").style.display = "none";
+                document.getElementById("btn-1-a").style.display = "block";
+                document.getElementById("drop-down-container").style.display = "block";
 
-        }
-
-        function btnHighLightA() {
-
-            document.getElementById("btn-1").style.display = "block";
-            document.getElementById("btn-1-a").style.display = "none";
-            document.getElementById("drop-down-container").style.display = "none";
-
-        }
-        
-
-        var displayVal = document.getElementById("drop-down-container").style.display;
-
-        console.log("Current value: " + displayVal);
-
-        function dropDown_OLD() {
-
-            console.log("**** Drop down button functioning ***");
-
-            var displayValue = document.getElementById("drop-down-container").style.display;
-
-            console.log("Current display mode: " + displayValue);
-
-            if (displayValue == "block") {
-                console.log("The display for the drop down is block");
-                document.getElementById("drop-down-container").style.display = none;
-            } else {
-                console.log("The current display value is none");
             }
 
-        }
+            function btnHighLightA() {
 
+                document.getElementById("btn-1").style.display = "block";
+                document.getElementById("btn-1-a").style.display = "none";
+                document.getElementById("drop-down-container").style.display = "none";
 
-    
-        document.getElementById("btn-1").addEventListener("click", btnHighLight);
-        document.getElementById("btn-1-a").addEventListener("click", btnHighLightA);
+            }
+        
+            document.getElementById("btn-1").addEventListener("click", btnHighLight);
+            document.getElementById("btn-1-a").addEventListener("click", btnHighLightA);
 
-
+        // 
+        // Drop Down Menu: End
+        //
     
     </script>
 

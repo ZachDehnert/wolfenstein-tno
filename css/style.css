@@ -98,14 +98,6 @@ body {
         
                     }
 
-        /* #btn-1:hover {
-            background-color: #fff;
-            float:left;
-            width:25vw;
-            height:20vw;
-            position: relative;
-        } */
-
         #btn-2 {
             background-color: #000;
             float:left;
@@ -161,29 +153,29 @@ body {
         display:none;
     }
 
-    #top-dd-nav-btn {
-        border-top:1px solid #b20000;
-        border-bottom:1px solid #fff;
-        background-color: #000;
-    }
-
-        #top-dd-nav-btn p {
-            padding: 3vh;
-            color:#fff;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        #top-dd-nav-btn {
+            border-top:1px solid #b20000;
+            border-bottom:1px solid #fff;
+            background-color: #000;
         }
 
-    .dd-nav-btn {
-        border-bottom:1px solid #fff;
-        background-color: #000;
-        max-height: 10vh;
-    }
+            #top-dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
 
-        .dd-nav-btn p {
-            padding: 3vh;
-            color:#fff;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        .dd-nav-btn {
+            border-bottom:1px solid #fff;
+            background-color: #000;
+            max-height: 10vh;
         }
+
+            .dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
 
     #wolfenstein-icon {
         width:100%;
@@ -193,18 +185,6 @@ body {
         background-color: #000;
         background-attachment: fixed;
         background-position: bottom;
-    }
-
-    #header-footer {
-        width:100%;
-        height:50px;
-        background-color: #000;
-        background-image: url("../images/mobile/red-horizontal-line.png");
-        background-size:100%;
-        background-repeat: no-repeat;
-        margin:0;
-        padding:0;
-        z-index: 0;
     }
 
 #divider {
@@ -218,22 +198,24 @@ body {
     width:100%;
     height:650px;
     /* background-image: url("../images/mobile/bg.jpg"); */
-    background-color: yellow;
+    background-color: #000;
 }
 
     #main-nav {
         width:100%;
         height:20vw;
         background-color:#000;
-
+        border-top:1px solid #fff;
+        border-bottom:1px solid #fff;
     }
 
         #btn-left {
             background-color: #000;
             float:left;
-            width:25vw;
+            width:20vw;
             height:20vw;
             position: relative;
+            
         }
 
             #btn-left p {
@@ -249,25 +231,13 @@ body {
                 font-weight: bold;
             }
 
-            #three-lines-icon {
-                width:100%;
-
-            }
-
-        /* #btn-1:hover {
-            background-color: #fff;
-            float:left;
-            width:25vw;
-            height:20vw;
-            position: relative;
-        } */
-
         #chapter-heading {
             background-color: #000;
             float:left;
-            width:40vw;
+            width:53vw;
             height:20vw;
             position: relative;
+            
         }
 
             #chapter-heading p {
@@ -283,17 +253,13 @@ body {
                 font-weight: bold;
             }
 
-            #title {
-                width:100%;
-                height:auto;
-            }
-
         #btn-right {
             background-color: #000;
             float:right;
             width:20vw;
             height:20vw;
             position: relative;
+            
         }
 
             #btn-right p {
@@ -309,29 +275,187 @@ body {
                 font-weight: bold;
             }
 
-            #search-icon {
-                width:75%;
-            }
-    #header-footer {
-        width:100%;
-        height:50px;
-        background-color: #000;
-        background-image: url("../images/mobile/red-horizontal-line.png");
-        position: absolute;
-        bottom:0;
-        left:0;
-        background-size:100%;
-        background-repeat: no-repeat;
-        margin:0;
-        padding:0;
-        z-index: 0;
-    }
-
 #footer {
     width:100%;
     height:650px;
     /* background-image: url("../images/mobile/bg.jpg"); */
     background-color: purple;
+}
+
+/* --------------------------------------------------------------------------------------------------
+-
+-       Next Highest Resolution: Smaller-Medium Phones
+-
+---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:450px) {
+
+    #header {
+        width:100%;
+        height:500px;
+        background-image: url("../images/mobile/bg.jpg");
+        background-size:100%;
+        /* border:1px solid pink; */
+    }
+    
+        #header-nav {
+            width:100%;
+            height:20vw;
+            background-color:#000;
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+            z-index: 1;
+        }
+    
+            #btn-1 {
+                background-color: #000;
+                float:left;
+                width:25vw;
+                height:20vw;
+                position: relative;
+                display:block;
+            }
+    
+                #btn-1 p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+    
+                #three-lines-icon {
+                    width:100%;
+    
+                }
+    
+                    #btn-1-a {
+                        background-color: #000;
+                        float:left;
+                        width:25vw;
+                        height:20vw;
+                        position: relative;
+                        display:none;
+                    }
+            
+                        #btn-1-a p {
+                            margin:0;
+                            background-color: transparent;
+                            position: absolute;
+                            top:50%;
+                            left:50%;
+                            margin-right:-50%;
+                            transform: translate(-50%, -50%);
+                            color:#fff;
+                        }
+            
+                        #three-lines-icon {
+                            width:100%;
+            
+                        }
+    
+            #btn-2 {
+                background-color: #000;
+                float:left;
+                width:40vw;
+                height:20vw;
+                position: relative;
+            }
+    
+                #btn-2 p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+    
+                #title {
+                    width:100%;
+                    height:auto;
+                }
+    
+            #btn-3 {
+                background-color: #000;
+                float:right;
+                width:20vw;
+                height:20vw;
+                position: relative;
+            }
+    
+                #btn-3 p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+    
+                #search-icon {
+                    width:75%;
+                }
+    
+        #drop-down-container {
+            width:100%;
+            height:100vh;
+            background-color: turquoise;
+            clear:both;
+            display:none;
+        }
+    
+            #top-dd-nav-btn {
+                border-top:1px solid #b20000;
+                border-bottom:1px solid #fff;
+                background-color: #000;
+            }
+    
+                #top-dd-nav-btn p {
+                    padding: 3vh;
+                    color:#fff;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+    
+            .dd-nav-btn {
+                border-bottom:1px solid #fff;
+                background-color: #000;
+                max-height: 10vh;
+            }
+    
+                .dd-nav-btn p {
+                    padding: 3vh;
+                    color:#fff;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+    
+        #wolfenstein-icon {
+            width:100%;
+            height:60vh;
+            background-image: url("../images/mobile/wolfenstein-icon.jpg");
+            background-repeat: no-repeat;
+            background-color: #000;
+            background-attachment: fixed;
+            background-position: bottom;
+        }
+    
+    #divider {
+        width:100%;
+        height:60px;
+        background-image: url("../images/mobile/red-horizontal-line.png");
+        background-size:100%;
+    }
+
+
 }
 
 /* --------------------------------------------------------------------------------------------------
@@ -497,6 +621,13 @@ body {
             background-position: bottom;
         }
 
+    #divider {
+        width:100%;
+        height:67px;
+        background-image: url("../images/mobile/red-horizontal-line.png");
+        background-size:100%;
+    }
+
 }
 
 /* --------------------------------------------------------------------------------------------------
@@ -515,6 +646,160 @@ body {
         /* border:1px solid pink; */
     }
 
+    #header-nav {
+        width:100%;
+        height:15vw;
+        background-color:#000;
+
+    }
+
+    #btn-1 {
+        background-color: #000;
+        float:left;
+        width:25vw;
+        height:15vw;
+        position: relative;
+        display: block;
+    }
+
+        #btn-1 p {
+            margin:0;
+            background-color: transparent;
+            position: absolute;
+            top:50%;
+            left:40%;
+            margin-right:-50%;
+            transform: translate(-50%, -50%);
+            color:#fff;
+        }
+        
+        #three-lines-icon {
+            width:150%;
+            background-color: #000;
+
+        }
+
+            #btn-1-a {
+                background-color: #000;
+                float:left;
+                width:25vw;
+                height:15vw;
+                position: relative;
+                display:none;
+            }
+
+                #btn-1-a p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:40%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+
+                #three-lines-icon {
+                    width:150%;
+
+                }
+
+    #btn-2 {
+        background-color: #000;
+        float:left;
+        width:40vw;
+        height:15vw;
+        position: relative;
+    }
+
+        #btn-2 p {
+            margin:0;
+            background-color: transparent;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-right:-50%;
+            transform: translate(-50%, -50%);
+            color:#fff;
+        }
+
+        #title {
+            width:70%;
+            height:auto;
+        }
+
+    #btn-3 {
+        background-color: #000;
+        float:right;
+        width:20vw;
+        height:15vw;
+        position: relative;
+    }
+
+        #btn-3 p {
+            margin:0;
+            background-color: transparent;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-right:-50%;
+            transform: translate(-50%, -50%);
+            color:#fff;
+        }
+
+        #search-icon {
+            width:70%;
+        }
+
+        #drop-down-container {
+            width:100%;
+            height:100vh;
+            background-color: turquoise;
+            clear:both;
+            display:none;
+        }
+    
+        #top-dd-nav-btn {
+            border-top:1px solid #b20000;
+            border-bottom:1px solid #fff;
+            background-color: #000;
+        }
+    
+            #top-dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+    
+        .dd-nav-btn {
+            border-bottom:1px solid #fff;
+            background-color: #000;
+            max-height: 10vh;
+        }
+    
+            .dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+        #wolfenstein-icon {
+            width:100%;
+            height:60vh;
+            background-image: url("../images/mobile/wolfenstein-icon.jpg");
+            background-repeat: no-repeat;
+            background-color: #000;
+            background-attachment: fixed;
+            background-position: bottom;
+        }
+
+    #divider {
+        width:100%;
+        height:77px;
+        background-image: url("../images/mobile/red-horizontal-line.png");
+        background-size:100%;
+    }
+
 }
 
 /* --------------------------------------------------------------------------------------------------
@@ -525,7 +810,167 @@ body {
 
 @media screen and (min-width:650px) {
 
+    #header {
+        width:100%;
+        height:953px;
+        background-image: url("../images/mobile/bg.jpg");
+        background-size:100%;
+        /* border:1px solid pink; */
+    }
 
+    #header-nav {
+        width:100%;
+        height:15vw;
+        background-color:#000;
+
+    }
+
+    #btn-1 {
+        background-color: #000;
+        float:left;
+        width:25vw;
+        height:15vw;
+        position: relative;
+        display: block;
+    }
+
+        #btn-1 p {
+            margin:0;
+            background-color: transparent;
+            position: absolute;
+            top:50%;
+            left:40%;
+            margin-right:-50%;
+            transform: translate(-50%, -50%);
+            color:#fff;
+        }
+        
+        #three-lines-icon {
+            width:150%;
+            background-color: #000;
+
+        }
+
+            #btn-1-a {
+                background-color: #000;
+                float:left;
+                width:25vw;
+                height:15vw;
+                position: relative;
+                display:none;
+            }
+
+                #btn-1-a p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:40%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+
+                #three-lines-icon {
+                    width:150%;
+
+                }
+
+    #btn-2 {
+        background-color: #000;
+        float:left;
+        width:40vw;
+        height:15vw;
+        position: relative;
+    }
+
+        #btn-2 p {
+            margin:0;
+            background-color: transparent;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-right:-50%;
+            transform: translate(-50%, -50%);
+            color:#fff;
+        }
+
+        #title {
+            width:70%;
+            height:auto;
+        }
+
+    #btn-3 {
+        background-color: #000;
+        float:right;
+        width:20vw;
+        height:15vw;
+        position: relative;
+    }
+
+        #btn-3 p {
+            margin:0;
+            background-color: transparent;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-right:-50%;
+            transform: translate(-50%, -50%);
+            color:#fff;
+        }
+
+        #search-icon {
+            width:70%;
+        }
+
+        #drop-down-container {
+            width:100%;
+            height:100vh;
+            background-color: turquoise;
+            clear:both;
+            display:none;
+        }
+    
+        #top-dd-nav-btn {
+            border-top:1px solid #b20000;
+            border-bottom:1px solid #fff;
+            background-color: #000;
+        }
+    
+            #top-dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+    
+        .dd-nav-btn {
+            border-bottom:1px solid #fff;
+            background-color: #000;
+            max-height: 10vh;
+        }
+    
+            .dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+        #wolfenstein-icon {
+            width:100%;
+            height:60vh;
+            background-image: url("../images/mobile/wolfenstein-icon.jpg");
+            background-repeat: no-repeat;
+            background-color: #000;
+            background-attachment: fixed;
+            background-position: bottom;
+        }
+
+    #divider {
+        width:100%;
+        height:90px;
+        background-image: url("../images/mobile/red-horizontal-line.png");
+        background-size:100%;
+    }
 
 }
 
@@ -567,16 +1012,6 @@ body {
                 width:150%;
 
             }
-
-            /* #btn-1:hover {
-                background-color: #fff;
-                float:left;
-                width:25vw;
-                height:20vw;
-                position: relative;
-            } */
-
-
 
         #btn-2 {
             background-color: #000;
@@ -632,6 +1067,90 @@ body {
             background-size:100%;
         }
 
+    #main {
+        width:100%;
+        height:650px;
+        /* background-image: url("../images/mobile/bg.jpg"); */
+        background-color: #000;
+    }
+    
+        #main-nav {
+            width:100%;
+            height:20vw;
+            background-color:#000;
+            border-top:1px solid #fff;
+            border-bottom:1px solid #fff;
+        }
+    
+            #btn-left {
+                background-color: #000;
+                float:left;
+                width:20vw;
+                height:20vw;
+                position: relative;
+                
+            }
+    
+                #btn-left p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#b20000;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                    font-size: 24pt;
+                }
+    
+            #chapter-heading {
+                background-color: #000;
+                float:left;
+                width:53vw;
+                height:20vw;
+                position: relative;
+                
+            }
+    
+                #chapter-heading p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#b20000;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                    font-size: 24pt;
+                }
+    
+            #btn-right {
+                background-color: #000;
+                float:right;
+                width:20vw;
+                height:20vw;
+                position: relative;
+                
+            }
+    
+                #btn-right p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#b20000;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bold;
+                    font-size: 24pt;
+                }
+
 }
 
 /* --------------------------------------------------------------------------------------------------
@@ -644,7 +1163,7 @@ body {
 
 #header {
     width:100%;
-    height:55vh;
+    height:45vh;
     background-image: url("../images/desktop/bg.jpg");
     background-size:100%;
     background-repeat: no-repeat;
@@ -653,9 +1172,9 @@ body {
 
     #header-nav {
         width:100%;
-        height:6vw;
+        height:8vw;
         background-color:#000;
-
+        
     }
 
         #btn-1 {
@@ -664,6 +1183,7 @@ body {
             width:8vw;
             height:4vw;
             position: relative;
+            
         }
 
             #btn-1 p {
@@ -679,7 +1199,7 @@ body {
 
             #three-lines-icon {
                 width:100%;
-                margin-top:1vw;
+                margin-top:3vw;
 
             }
 
@@ -690,6 +1210,31 @@ body {
                 height:20vw;
                 position: relative;
             } */
+
+            #btn-1-a {
+                background-color: #000;
+                float:left;
+                width:8vw;
+                height:4vw;
+                position: relative;
+                display:none;
+            }
+
+                #btn-1-a p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+
+                #three-lines-icon {
+                    width:100%;
+
+                }
 
 
 
@@ -715,7 +1260,7 @@ body {
             #title {
                 width:30%;
                 height:auto;
-                margin-top:1vw;
+                margin-top:3vw;
             }
 
         #btn-3 {
@@ -739,8 +1284,51 @@ body {
     
             #search-icon {
                 width:55%;
-                margin-top:1vw;
+                margin-top:3vw;
             }
+
+        #drop-down-container {
+            width:100%;
+            height:100vh;
+            background-color: turquoise;
+            clear:both;
+            display:none;
+            margin-top:7vh;
+        }
+    
+        #top-dd-nav-btn {
+            border-top:1px solid #b20000;
+            border-bottom:1px solid #fff;
+            background-color: #000;
+        }
+    
+            #top-dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+    
+        .dd-nav-btn {
+            border-bottom:1px solid #fff;
+            background-color: #000;
+            max-height: 10vh;
+        }
+    
+            .dd-nav-btn p {
+                padding: 3vh;
+                color:#fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+        #wolfenstein-icon {
+            width:100%;
+            height:60vh;
+            background-image: url("../images/mobile/wolfenstein-icon.jpg");
+            background-repeat: no-repeat;
+            background-color: #000;
+            background-attachment: fixed;
+            background-position: bottom;
+        }
 
 }
 
@@ -754,7 +1342,7 @@ body {
 
 #header {
     width:100%;
-    height:65vh;
+    height:55vh;
     background-image: url("../images/desktop/bg.jpg");
     background-size:100%;
     background-repeat: no-repeat;
@@ -763,7 +1351,7 @@ body {
 
     #header-nav {
         width:100%;
-        height:6vw;
+        height:8vw;
         background-color:#000;
 
     }
@@ -789,7 +1377,7 @@ body {
 
             #three-lines-icon {
                 width:100%;
-                margin-top:1vw;
+                margin-top:3vw;
 
             }
 
@@ -801,6 +1389,30 @@ body {
                 position: relative;
             } */
 
+            #btn-1-a {
+                background-color: #000;
+                float:left;
+                width:8vw;
+                height:4vw;
+                position: relative;
+                display:none;
+            }
+
+                #btn-1-a p {
+                    margin:0;
+                    background-color: transparent;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin-right:-50%;
+                    transform: translate(-50%, -50%);
+                    color:#fff;
+                }
+
+                #three-lines-icon {
+                    width:100%;
+
+                }
 
 
         #btn-2 {
@@ -825,7 +1437,7 @@ body {
             #title {
                 width:30%;
                 height:auto;
-                margin-top:1vw;
+                margin-top:3vw;
             }
 
         #btn-3 {
@@ -849,8 +1461,15 @@ body {
     
             #search-icon {
                 width:55%;
-                margin-top:1vw;
+                margin-top:3vw;
             }
+
+        #divider {
+            width:100%;
+            height:60px;
+            background-image: url("../images/mobile/red-horizontal-line-larger.png");
+            background-size:100%;
+        }
 
 
 }
@@ -960,6 +1579,7 @@ body {
         
                 #search-icon {
                     width:75%;
+                    margin-top:1vw;
                 }
     
     }
