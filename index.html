@@ -69,6 +69,15 @@
 
                 <img id="chpt-1-img" src="images/mobile/Chapter One Header Image.jpg">
 
+                <div id="chpt1Land">
+
+                    <div id="image-land"><div id="chpt1-land-styles"><div id="close-land"><img src="images/mobile/close-btn.jpg"></div></div></div>
+                    
+
+                </div>
+
+                <div id="test-1"></div>
+
                 <div id="chapter-summary">
 
                     <p class="chapter-p">In this chapter, you are introduced to the main character and his supporting character while flying a bomber assaulting a Nazi compound. You play Captain William "B.J" Blazkowicz as a special forces soldier assaulting Deathshead’s compound. The two supporting characters are Fergus and Wyatt, Fergus is flying the bomber as a clearly experienced vet to war while Wyatt is a young wet-behind-the-ears soldier who is constantly on the verge of losing their mind from the war around them. You immediately see how outnumbered the allied forces are, but Blazko and his team push on and make it to the inner compound. This is where Blazko needs to make a very difficult decision. The story splits into two timelines at this point. You can play the Fergus timeline or the Wyatt timeline.</p>
@@ -123,12 +132,7 @@
 
     </div>
 
-    <div id="footer">
-
-
-
-
-    </div>
+    <div id="footer"></div>
 
     <script>
 
@@ -171,6 +175,8 @@
         // Chapter 1 Content
         //
 
+            // Spoilers
+
             function spoilerChapterOneShow() {
                 console.log("Spoiler chapter one is connected");
                 document.getElementById("chapter-one-spoiler").style.display = "block";
@@ -185,6 +191,8 @@
 
             document.getElementById("spoilerChapterOneShow").addEventListener("click", spoilerChapterOneShow);
             document.getElementById("spoilerChapterOneHide").addEventListener("click", spoilerChapterOneHide);
+
+            // Navigation between chapters
 
             document.getElementById("ch01").addEventListener("click", chOne);
             document.getElementById("ch02").addEventListener("click", chTwo);
@@ -202,7 +210,19 @@
                 document.getElementById("chapter-two-holder").style.display = "block";
 
             }
+
+            // Landscape mode on images
+
+            function chpt1LandOpen() {
+                document.getElementById("chpt1Land").style.display = "block";
+            }
+
+            function chpt1LandClose() {
+                document.getElementById("chpt1Land").style.display = "none";
+            }
     
+            document.getElementById("chpt-1-img").addEventListener("click", chpt1LandOpen);
+            document.getElementById("close-land").addEventListener("click", chpt1LandClose);
     </script>
 
 </body>
