@@ -324,6 +324,13 @@ body {
         font-size: 10pt;
     }
 
+    #chapter-summary h1 {
+        color:#fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14pt;
+        padding:0 0 10px 0;
+    }
+
     .chapter-p {
         color:#fff;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -331,6 +338,7 @@ body {
 
     #chapter-one-spoiler {
         display:none;
+        padding:10px 0 10px 0;
     }
 
     #spoilerChapterOneShow {
@@ -338,6 +346,7 @@ body {
         background-color: #000;
         border:1px solid #fff;
         padding:5px 5px 5px 5px;
+        margin:10px 0 0 0;
     }
 
     #spoilerChapterOneHide {
@@ -346,6 +355,7 @@ body {
         background-color: #000;
         border:1px solid #fff;
         padding:5px 5px 5px 5px;
+        margin:10px 0 0 0;
     }
 
 #footer {
