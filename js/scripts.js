@@ -1,21 +1,13 @@
 console.log("******* ******* Internal JS is connected ******* *******");
 
-document.getElementById("chapter-two-holder").style.display = "none";
-document.getElementById("chapter-three-holder").style.display = "none";
-document.getElementById("chapter-four-holder").style.display = "none";
-document.getElementById("chapter-five-holder").style.display = "none";
-document.getElementById("chapter-six-holder").style.display = "none";
-document.getElementById("chapter-seven-holder").style.display = "none";
-document.getElementById("chapter-eight-holder").style.display = "none";
-document.getElementById("chapter-nine-holder").style.display = "none";
-document.getElementById("chapter-ten-holder").style.display = "none";
-document.getElementById("chapter-eleven-holder").style.display = "none";
-document.getElementById("chapter-twelve-holder").style.display = "none";
-document.getElementById("chapter-thirteen-holder").style.display = "none";
-document.getElementById("chapter-fourteen-holder").style.display = "none";
-document.getElementById("chapter-fifteen-holder").style.display = "none";
-document.getElementById("chapter-sixteen-holder").style.display = "none";
+var chapterNum = 1;
 
+for (i = 0; i < 16; i++) {
+    let chapterHolder = "chapter-" + (chapterNum + i) + "-holder"; // chapter-1-holder
+    //console.log(chapterHolder);
+    document.getElementById(chapterHolder).style.display = "none";
+    document.getElementById("chapter-1-holder").style.display = "block";
+}
 
 // 
 // Drop Down Menu: Start
@@ -68,376 +60,35 @@ document.getElementById("chapter-sixteen-holder").style.display = "none";
     document.getElementById("spoilerChapterOneShow").addEventListener("click", spoilerChapterOneShow);
     document.getElementById("spoilerChapterOneHide").addEventListener("click", spoilerChapterOneHide);
 
-    // Navigation between chapters
+// ===================================================================================================================================
+//
+// New Chapter Nav Function
+//
+// ===================================================================================================================================
 
-    document.getElementById("ch01-left").addEventListener("click", chOne);
-    document.getElementById("ch02-left").addEventListener("click", chTwo);
-    document.getElementById("ch02-right").addEventListener("click", chTwo);
-    document.getElementById("ch03-left").addEventListener("click", chThree);
-    document.getElementById("ch03-right").addEventListener("click", chThree);
-    document.getElementById("ch04-left").addEventListener("click", chFour);
-    document.getElementById("ch04-right").addEventListener("click", chFour);
-    document.getElementById("ch05-left").addEventListener("click", chFive);
-    document.getElementById("ch05-right").addEventListener("click", chFive);
-    document.getElementById("ch06-left").addEventListener("click", chSix);
-    document.getElementById("ch06-right").addEventListener("click", chSix);
-    document.getElementById("ch07-left").addEventListener("click", chSeven);
-    document.getElementById("ch07-right").addEventListener("click", chSeven);
-    document.getElementById("ch08-left").addEventListener("click", chEight);
-    document.getElementById("ch08-right").addEventListener("click", chEight);
-    document.getElementById("ch09-left").addEventListener("click", chNine);
-    document.getElementById("ch09-right").addEventListener("click", chNine);
-    document.getElementById("ch10-left").addEventListener("click", chTen);
-    document.getElementById("ch10-right").addEventListener("click", chTen);
-    document.getElementById("ch11-left").addEventListener("click", chEleven);
-    document.getElementById("ch11-right").addEventListener("click", chEleven);
-    document.getElementById("ch12-left").addEventListener("click", chTwelve);
-    document.getElementById("ch12-right").addEventListener("click", chTwelve);
-    document.getElementById("ch13-left").addEventListener("click", chThirteen);
-    document.getElementById("ch13-right").addEventListener("click", chThirteen);
-    document.getElementById("ch14-left").addEventListener("click", chFourteen);
-    document.getElementById("ch14-right").addEventListener("click", chFourteen);
-    document.getElementById("ch15-left").addEventListener("click", chFifteen);
-    document.getElementById("ch15-right").addEventListener("click", chFifteen);
-    // document.getElementById("ch16-left").addEventListener("click", chSixteen);
-    document.getElementById("ch16-right").addEventListener("click", chSixteen);
+function chapterSelectLeft() {
 
-
-    function chOne() {
-        console.log("Chapter 1 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "block";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-    
-    function chTwo() {
-        console.log("Chapter 2 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "block";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
+    for (i = 1; i < 17; i++) {
+        let chapterHolder = "chapter-" + i + "-holder";
+        document.getElementById(chapterHolder).style.display = "none";
     }
 
-    function chThree() {
-        console.log("Chapter 3 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "block";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
+    chapterNum -= 1;
+    document.getElementById("chapter-" + chapterNum + "-holder").style.display = "block";
+}
 
+function chapterSelectRight() {
+
+    for (i = 1; i < 17; i++) {
+        let chapterHolder = "chapter-" + i + "-holder";
+        document.getElementById(chapterHolder).style.display = "none";
     }
 
-    function chFour() {
-        console.log("Chapter 4 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "block";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
+    chapterNum += 1;
+    document.getElementById("chapter-" + chapterNum + "-holder").style.display = "block";
+}
 
-    }
-
-    function chFive() {
-        console.log("Chapter 5 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "block";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chSix() {
-        console.log("Chapter 6 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "block";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chSeven() {
-        console.log("Chapter 7 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "block";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chEight() {
-        console.log("Chapter 8 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "block";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chNine() {
-        console.log("Chapter 9 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "block";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chTen() {
-        console.log("Chapter 10 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "block";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chEleven() {
-        console.log("Chapter 11 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "block";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chTwelve() {
-        console.log("Chapter 12 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "block";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chThirteen() {
-        console.log("Chapter 13 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "block";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chFourteen() {
-        console.log("Chapter 14 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "block";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chFifteen() {
-        console.log("Chapter 15 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "block";
-        document.getElementById("chapter-sixteen-holder").style.display = "none";
-
-    }
-
-    function chSixteen() {
-        console.log("Chapter 16 is loaded");
-        document.getElementById("chapter-one-holder").style.display = "none";
-        document.getElementById("chapter-two-holder").style.display = "none";
-        document.getElementById("chapter-three-holder").style.display = "none";
-        document.getElementById("chapter-four-holder").style.display = "none";
-        document.getElementById("chapter-five-holder").style.display = "none";
-        document.getElementById("chapter-six-holder").style.display = "none";
-        document.getElementById("chapter-seven-holder").style.display = "none";
-        document.getElementById("chapter-eight-holder").style.display = "none";
-        document.getElementById("chapter-nine-holder").style.display = "none";
-        document.getElementById("chapter-ten-holder").style.display = "none";
-        document.getElementById("chapter-eleven-holder").style.display = "none";
-        document.getElementById("chapter-twelve-holder").style.display = "none";
-        document.getElementById("chapter-thirteen-holder").style.display = "none";
-        document.getElementById("chapter-fourteen-holder").style.display = "none";
-        document.getElementById("chapter-fifteen-holder").style.display = "none";
-        document.getElementById("chapter-sixteen-holder").style.display = "block";
-
-    }
+// END OF New Chapter Nav Function
 
     // Landscape mode on images
 

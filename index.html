@@ -11,19 +11,23 @@
     Web Design Tester, which allows me to test most but not all devices. It's probably the closest I will
     get to being able to test multiple devices.
 
+    Update(2020-07-21): I coded for every possibility since that was easier to digest at that time. I
+    found some extra time and rewrote the chapter nav with removing every possibility and adding a for
+    loop.
+
 -->
 
 <html>
 
 <head>
+
     <title>WTNO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
-
-    <!-- <h1>Hello World!</h1> -->
 
     <div id="header">
 
@@ -57,13 +61,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-one-holder">
+        <div id="chapter-1-holder">
 
             <div id="main-nav">
 
-                <div class="btn-left"><p></p></div>
+                <div class="btn-left-first"></div>
                 <div id="chapter-heading"><p>CHAPTER 01</p></div>
-                <div id="ch02-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -103,13 +107,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-two-holder">
+        <div id="chapter-2-holder">
 
             <div id="main-nav">
 
-                <div id="ch01-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 02</p></div>
-                <div id="ch03-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -140,13 +144,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-three-holder">
+        <div id="chapter-3-holder">
 
             <div id="main-nav">
 
-                <div id="ch02-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 03</p></div>
-                <div id="ch04-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -177,13 +181,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-four-holder">
+        <div id="chapter-4-holder">
 
             <div id="main-nav">
 
-                <div id="ch03-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 04</p></div>
-                <div id="ch05-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -214,13 +218,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-five-holder">
+        <div id="chapter-5-holder">
 
             <div id="main-nav">
 
-                <div id="ch04-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 05</p></div>
-                <div id="ch06-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -251,13 +255,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-six-holder">
+        <div id="chapter-6-holder">
 
             <div id="main-nav">
 
-                <div id="ch05-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 06</p></div>
-                <div id="ch07-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -288,13 +292,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-seven-holder">
+        <div id="chapter-7-holder">
 
             <div id="main-nav">
 
-                <div id="ch06-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 07</p></div>
-                <div id="ch08-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -325,13 +329,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-eight-holder">
+        <div id="chapter-8-holder">
 
             <div id="main-nav">
 
-                <div id="ch07-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 08</p></div>
-                <div id="ch09-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -362,13 +366,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-nine-holder">
+        <div id="chapter-9-holder">
 
             <div id="main-nav">
 
-                <div id="ch08-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 09</p></div>
-                <div id="ch10-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -399,13 +403,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-ten-holder">
+        <div id="chapter-10-holder">
 
             <div id="main-nav">
 
-                <div id="ch09-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 10</p></div>
-                <div id="ch11-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -436,13 +440,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-eleven-holder">
+        <div id="chapter-11-holder">
 
             <div id="main-nav">
 
-                <div id="ch10-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 11</p></div>
-                <div id="ch12-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -473,13 +477,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-twelve-holder">
+        <div id="chapter-12-holder">
 
             <div id="main-nav">
 
-                <div id="ch11-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 12</p></div>
-                <div id="ch13-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -510,13 +514,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-thirteen-holder">
+        <div id="chapter-13-holder">
 
             <div id="main-nav">
 
-                <div id="ch12-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 13</p></div>
-                <div id="ch14-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -547,13 +551,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-fourteen-holder">
+        <div id="chapter-14-holder">
 
             <div id="main-nav">
 
-                <div id="ch13-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 14</p></div>
-                <div id="ch15-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -584,13 +588,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-fifteen-holder">
+        <div id="chapter-15-holder">
 
             <div id="main-nav">
 
-                <div id="ch14-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 15</p></div>
-                <div id="ch16-right" class="btn-right"><p>></p></div>
+                <div onclick="chapterSelectRight()" class="btn-right"><p>></p></div>
 
             </div>
 
@@ -621,13 +625,13 @@
         -
         -------------------------------------------------------------------------------------- -->
 
-        <div id="chapter-sixteen-holder">
+        <div id="chapter-16-holder">
 
             <div id="main-nav">
 
-                <div id="ch15-left" class="btn-left"><p><</p></div>
+                <div onclick="chapterSelectLeft()" class="btn-left"><p><</p></div>
                 <div id="chapter-heading"><p>CHAPTER 16</p></div>
-                <div id="" class="btn-right"><p></p></div>
+                <div class="btn-left-first"><p></p></div>
 
             </div>
 

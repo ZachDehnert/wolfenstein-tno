@@ -216,8 +216,28 @@ body {
             width:20vw;
             height:20vw;
             position: relative;
-            
+            cursor: pointer;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
+
+            .btn-left-first {
+                background-color: #000;
+                float:left;
+                width:20vw;
+                height:20vw;
+                position: relative;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
 
             .btn-left p {
                 margin:0;
@@ -238,7 +258,12 @@ body {
             width:53vw;
             height:20vw;
             position: relative;
-            
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
             #chapter-heading p {
@@ -260,7 +285,13 @@ body {
             width:20vw;
             height:20vw;
             position: relative;
-            
+            cursor: pointer;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
             .btn-right p {
